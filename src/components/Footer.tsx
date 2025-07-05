@@ -8,61 +8,56 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="logo-text">JobSpring</span>
+              <img src="/lovable-uploads/82d14e6f-9440-4999-8843-9f54d97492bd.png" alt="JobSpring" />
+              <span>JobSpring</span>
             </div>
-            <p className="footer-description">
-              Empowering job seekers with AI-powered tools to land their dream careers.
-            </p>
+            <p>Empowering job seekers with AI-powered tools to land their dream careers.</p>
             <div className="social-links">
-              <a href="#" className="social-link">📘</a>
-              <a href="#" className="social-link">🐦</a>
-              <a href="#" className="social-link">💼</a>
-              <a href="#" className="social-link">📷</a>
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="LinkedIn">💼</a>
+              <a href="#" aria-label="Instagram">📷</a>
             </div>
           </div>
 
           <div className="footer-links">
-            <div className="link-group">
-              <h4 className="link-title">Product</h4>
-              <a href="#" className="footer-link">Resume Builder</a>
-              <a href="#" className="footer-link">Interview Coach</a>
-              <a href="#" className="footer-link">Job Search</a>
-              <a href="#" className="footer-link">Career Guidance</a>
+            <div className="link-column">
+              <h4>Product</h4>
+              <a href="#">Resume Builder</a>
+              <a href="#">Interview Coach</a>
+              <a href="#">Job Search</a>
+              <a href="#">Career Guidance</a>
             </div>
 
-            <div className="link-group">
-              <h4 className="link-title">Company</h4>
-              <a href="#" className="footer-link">About Us</a>
-              <a href="#" className="footer-link">Careers</a>
-              <a href="#" className="footer-link">Press</a>
-              <a href="#" className="footer-link">Contact</a>
+            <div className="link-column">
+              <h4>Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Press</a>
+              <a href="#">Contact</a>
             </div>
 
-            <div className="link-group">
-              <h4 className="link-title">Resources</h4>
-              <a href="#" className="footer-link">Blog</a>
-              <a href="#" className="footer-link">Help Center</a>
-              <a href="#" className="footer-link">Community</a>
-              <a href="#" className="footer-link">Success Stories</a>
+            <div className="link-column">
+              <h4>Resources</h4>
+              <a href="#">Blog</a>
+              <a href="#">Help Center</a>
+              <a href="#">Community</a>
+              <a href="#">Success Stories</a>
             </div>
 
-            <div className="link-group">
-              <h4 className="link-title">Legal</h4>
-              <a href="#" className="footer-link">Privacy Policy</a>
-              <a href="#" className="footer-link">Terms of Service</a>
-              <a href="#" className="footer-link">Cookie Policy</a>
-              <a href="#" className="footer-link">GDPR</a>
+            <div className="link-column">
+              <h4>Legal</h4>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">GDPR</a>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <div className="footer-copyright">
-            <p>&copy; 2024 JobSpring. All rights reserved.</p>
-          </div>
-          <div className="footer-badge">
-            <span>✨ Built with React & TypeScript</span>
-          </div>
+          <p>&copy; 2024 JobSpring. All rights reserved.</p>
+          <p>Built with ❤️ for job seekers worldwide</p>
         </div>
       </div>
     </footer>

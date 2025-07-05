@@ -5,79 +5,52 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: 'Sarah Johnson',
-      role: 'Software Engineer',
-      company: 'TechCorp',
-      image: '',
-      content: 'JobSpring helped me land my dream job at a Fortune 500 company. The AI resume builder was a game-changer!'
+      role: 'Software Engineer at Google',
+      content: 'JobSpring helped me transition from a startup to my dream job at Google. The AI resume builder was incredible!',
+      rating: 5
     },
     {
       name: 'Michael Chen',
-      role: 'Marketing Manager', 
-      company: 'GrowthLab',
-      image: '',
-      content: 'The interview practice sessions boosted my confidence tremendously. Highly recommend to anyone job hunting.'
+      role: 'Product Manager at Microsoft',
+      content: 'I got 3x more interview calls after using JobSpring. The platform is a game-changer for job seekers.',
+      rating: 5
     },
     {
       name: 'Emily Rodriguez',
-      role: 'Data Analyst',
-      company: 'DataFlow',
-      image: '',
-      content: 'Found my perfect job in just 2 weeks! The job matching feature is incredibly accurate.'
-    },
-    {
-      name: 'David Kim',
-      role: 'Product Designer',
-      company: 'DesignHub',
-      image: '',
-      content: 'The resume optimization suggestions were spot-on. Got 3x more interview calls!'
-    },
-    {
-      name: 'Lisa Thompson',
-      role: 'Sales Director',
-      company: 'SalesPro',
-      image: '',
-      content: 'JobSpring made my career transition seamless. The expert guidance was invaluable.'
-    },
-    {
-      name: 'Alex Morgan',
-      role: 'DevOps Engineer',
-      company: 'CloudTech',
-      image: '',
-      content: 'The AI tools are revolutionary. Saved me hours of work and got better results.'
+      role: 'Data Scientist at Netflix',
+      content: 'The interview preparation tools gave me the confidence I needed. Landed my dream job in just 2 months!',
+      rating: 5
     }
   ];
 
   return (
     <section className="testimonials">
       <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">Testimonials</h2>
-          <h3 className="section-subtitle">Hear from our successful users</h3>
+        <div className="testimonials-header">
+          <h2>What Our Users Say</h2>
+          <p>Join thousands of successful job seekers</p>
         </div>
         
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-card">
-              <div className="testimonial-content">
-                <p className="testimonial-text">"{testimonial.content}"</p>
+              <div className="testimonial-stars">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <span key={i}>⭐</span>
+                ))}
               </div>
+              <p className="testimonial-content">"{testimonial.content}"</p>
               <div className="testimonial-author">
                 <div className="author-avatar">
-                  <span>{testimonial.name[0]}</span>
+                  {testimonial.name.charAt(0)}
                 </div>
                 <div className="author-info">
-                  <div className="author-name">{testimonial.name}</div>
-                  <div className="author-role">{testimonial.role} at {testimonial.company}</div>
+                  <h4>{testimonial.name}</h4>
+                  <p>{testimonial.role}</p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="bottom-cta">
-          <h3 className="cta-title">Land your dream job with JobSpring</h3>
-          <p className="cta-description">Join thousands of successful job seekers today</p>
-          <button className="btn-primary large">Start Your Journey</button>
         </div>
       </div>
     </section>
