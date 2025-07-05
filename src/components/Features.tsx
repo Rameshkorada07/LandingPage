@@ -45,10 +45,14 @@ const Features = () => {
         
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div key={index} className="feature-item">
-              <div className="feature-icon">{feature.icon}</div>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
+            <div key={index} className="feature-card">
+              <div className="feature-icon-wrapper">
+                <div className="feature-icon">{feature.icon}</div>
+              </div>
+              <div className="feature-content">
+                <h3>{feature.title}</h3>
+                <p>{feature.description}</p>
+              </div>
             </div>
           ))}
         </div>
