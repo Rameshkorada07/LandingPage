@@ -47,7 +47,7 @@ const FAQ = () => {
     <section className="faq">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Frequently Asked Questions</h2>
+          <h2 className="faq-title">Frequently Asked Questions</h2>
         </div>
         
         <div className="faq-list">

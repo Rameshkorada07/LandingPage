@@ -2,59 +2,46 @@
 import React from 'react';
 
 const Features = () => {
-  const features = [
-    {
-      icon: '📝',
-      title: 'AI Resume Builder',
-      description: 'Create professional resumes with our AI-powered builder that optimizes for ATS systems and recruiter preferences.'
-    },
-    {
-      icon: '🎯',
-      title: 'Job Matching',
-      description: 'Get matched with relevant job opportunities based on your skills, experience, and career preferences.'
-    },
-    {
-      icon: '💬',
-      title: 'Interview Preparation',
-      description: 'Practice interviews with AI and get personalized feedback to improve your performance and confidence.'
-    },
-    {
-      icon: '📊',
-      title: 'Career Analytics',
-      description: 'Track your job search progress with detailed analytics and insights to optimize your strategy.'
-    },
-    {
-      icon: '🔍',
-      title: 'Job Search Tools',
-      description: 'Access powerful tools to find and apply to jobs efficiently across multiple platforms.'
-    },
-    {
-      icon: '🎓',
-      title: 'Skill Development',
-      description: 'Identify skill gaps and get recommendations for courses to enhance your qualifications.'
-    }
-  ];
-
   return (
     <section className="features" id="features">
       <div className="container">
         <div className="features-header">
-          <h2>Our Features</h2>
-          <p>Everything you need to land your dream job</p>
+          <h3 className="section-subtitle">Features</h3>
+          <h2 className="section-title">Simplify Every Step of Your Job</h2>
         </div>
         
-        <div className="features-grid">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <div className="feature-icon-wrapper">
-                <div className="feature-icon">{feature.icon}</div>
-              </div>
-              <div className="feature-content">
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </div>
+        <div className="features-content">
+          {/* Resume Builder Feature */}
+          <div className="feature-showcase">
+            <div className="feature-visual">
+              <img 
+                src="src/components/Assets/feature-1.jpg" 
+                alt="Resume Builder Feature" 
+                className="feature-image"
+              />
             </div>
-          ))}
+            <div className="feature-content">
+              <h3>A resume builder tailored to your job description</h3>
+              <p>Generate tailored resumes with AI and boost your chances of landing your dream job through smart recommendations</p>
+              <button className="btn-primary feature-cta">CREATE RESUME</button>
+            </div>
+          </div>
+
+          {/* Interview Coach Feature */}
+          <div className="feature-showcase">
+            <div className="feature-content">
+              <h3>AI-Powered Interview Coach to Master Your Skills</h3>
+              <p>Advance your job readiness with our AI-powered platform. Practice real scenarios, get feedback, and gain confidence.</p>
+              <button className="btn-primary feature-cta">TAKE INTERVIEW</button>
+            </div>
+            <div className="feature-visual">
+              <img 
+                src="src/components/Assets/feature-2.jpg" 
+                alt="Interview Coach Feature" 
+                className="feature-image"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

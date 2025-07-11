@@ -5,9 +5,12 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import AITools from '../components/AITools';
 import Statistics from '../components/Statistics';
+import BeforeAfter from '../components/BeforeAfter';
 import WhyChoose from '../components/WhyChoose';
 import Testimonials from '../components/Testimonials';
+import UpcomingFeatures from '../components/UpcomingFeatures';
 import FAQ from '../components/FAQ';
+import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
 import '../styles/main.css';
 
@@ -17,11 +20,14 @@ const Index = () => {
       <Header />
       <Hero />
       <Features />
-      <AITools />
+      {/*<AITools />*/}
       <Statistics />
+      <BeforeAfter />
       <WhyChoose />
       <Testimonials />
+      <UpcomingFeatures />
       <FAQ />
+      <CallToAction />
       <Footer />
     </div>
   );

@@ -1,22 +1,31 @@
 
 import React from 'react';
+import thunder from './Assets/thunder.png'
+import ats from './Assets/ats.png'
+import mockup from './Assets/mockup.png'
+import feedback from './Assets/feedback.png'
 
 const Statistics = () => {
-  const stats = [
+  const steps = [
     {
-      number: '95%',
-      label: 'Success Rate',
-      description: 'of users land their dream job within 3 months'
+      icon: thunder,
+      title: 'Instant customization',
+      description: 'Create a tailored resume in seconds, aligned with your target job.'
     },
     {
-      number: '50K+',
-      label: 'Active Jobs',
-      description: 'across various industries and experience levels'
+      icon: ats,
+      title: 'ATS Optimization',
+      description: 'Optimize your resume with keywords & formatting to pass systems.'
     },
     {
-      number: '25K+',
-      label: 'Happy Users',
-      description: 'who have successfully found their ideal positions'
+      icon: mockup,
+      title: 'Mock Interviews',
+      description: 'Practice tailored mock interviews for your target job role.'
+    },
+    {
+      icon: feedback,
+      title: 'Real-Time Feedback',
+      description: 'Get real-time feedback on answers, tone, and body language.'
     }
   ];
 
@@ -25,18 +34,47 @@ const Statistics = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">All you need to land your dream job</h2>
-          <p className="section-description">Join thousands of successful job seekers</p>
+          <p className="section-description">We provide the best tasks to help you get your dream job.</p>
         </div>
         
-        <div className="stats-grid">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-card">
-              <div className="stat-icon">📊</div>
-              <div className="stat-number">{stat.number}</div>
-              <div className="stat-label">{stat.label}</div>
-              <div className="stat-description">{stat.description}</div>
-            </div>
-          ))}
+        <div className="steps-track-container">
+          <div className="steps-track">
+            {/* First set of steps */}
+            {steps.map((step, index) => (
+              <div key={`first-${index}`} className="step-card">
+                <div className="step-icon-wrapper">
+                  <img src={step.icon} alt={step.title} className="step-icon-img" />
+                </div>
+                <div className="step-content">
+                  <h3 className="step-title">{step.title}</h3>
+                  <p className="step-description">{step.description}</p>
+                </div>
+                {index < steps.length - 1 && (
+                  <div className="step-connector">
+                    <div className="connector-dots"></div>
+                  </div>
+                )}
+              </div>
+            ))}
+            
+            {/* Second set of steps for seamless loop */}
+            {steps.map((step, index) => (
+              <div key={`second-${index}`} className="step-card">
+                <div className="step-icon-wrapper">
+                  <img src={step.icon} alt={step.title} className="step-icon-img" />
+                </div>
+                <div className="step-content">
+                  <h3 className="step-title">{step.title}</h3>
+                  <p className="step-description">{step.description}</p>
+                </div>
+                {index < steps.length - 1 && (
+                  <div className="step-connector">
+                    <div className="connector-dots"></div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

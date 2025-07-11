@@ -1,65 +1,59 @@
 
 import React from 'react';
-
+import freeOfCost from './Assets/freeOfCost.png';
+import atsscore from './Assets/atsscore.png';
+import interviewCoach from './Assets/interviewCoach.png';
+import whyChoose_bg from './Assets/whyChoose-bg.png'
 const WhyChoose = () => {
-  const reasons = [
-    {
-      icon: '🚀',
-      title: 'Fast Results',
-      description: 'Get results 3x faster than traditional job search methods'
-    },
-    {
-      icon: '🤖',
-      title: 'AI-Powered',
-      description: 'Leverage cutting-edge AI technology for better outcomes'
-    },
-    {
-      icon: '📈',
-      title: 'Proven Success',
-      description: '95% of our users land their dream job within 3 months'
-    },
-    {
-      icon: '💼',
-      title: 'Industry Experts',
-      description: 'Get guidance from top recruiters and industry professionals'
-    }
-  ];
-
   return (
-    <section className="why-choose">
-      <div className="container">
-        <div className="why-choose-content">
-          <div className="why-choose-left">
-            <h2>Why Choose JobSpring?</h2>
-            <p>We're not just another job board. We're your career transformation partner.</p>
-            <div className="reasons-list">
-              {reasons.map((reason, index) => (
-                <div key={index} className="reason-item">
-                  <div className="reason-icon">{reason.icon}</div>
-                  <div className="reason-content">
-                    <h4>{reason.title}</h4>
-                    <p>{reason.description}</p>
-                  </div>
-                </div>
-              ))}
+    <section className="why-choose" style={{backgroundImage: `url(${whyChoose_bg})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className='heading-title'>
+            why users choose <span className="text-blue-600">Jobspring</span>
+          </h2>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+          {/* Free of cost */}
+          <div className="text-center">
+            <div className="flex justify-center mb-6">
+              <img src={freeOfCost} alt="Free of cost" className='whyChoose-img' />
             </div>
+            <h3 className="img-heading">Free of cost</h3>
+            <p className='img-description'>
+              Create a professional resume for free! Our builders empowers job seekers by removing financial barriers to landing their dream job.
+            </p>
           </div>
-          <div className="why-choose-right">
-            <div className="success-metrics">
-              <div className="metric">
-                <span className="metric-number">95%</span>
-                <span className="metric-label">Success Rate</span>
-              </div>
-              <div className="metric">
-                <span className="metric-number">50K+</span>
-                <span className="metric-label">Jobs Available</span>
-              </div>
-              <div className="metric">
-                <span className="metric-number">25K+</span>
-                <span className="metric-label">Happy Users</span>
-              </div>
+
+          {/* 90+ ATS Score Resume */}
+          <div className="text-center">
+            <div className="flex justify-center mb-6">
+              <img src={atsscore} alt="90+ ATS Score Resume"  className='whyChoose-img'  />
             </div>
+            <h3 className="img-heading">90+ ATS Score Resume</h3>
+            <p className='img-description'>
+              Create ATS-optimized resumes with a 90+ score to boost your chances of catching recruiters' attention and securing top placement.
+            </p>
           </div>
+
+          {/* Interview Coach */}
+          <div className="text-center">
+            <div className="flex justify-center mb-6">
+              <img src={interviewCoach} alt="Interview Coach" className='whyChoose-img' />
+            </div>
+            <h3 className="img-heading">Interview Coach</h3>
+            <p className='img-description'>
+              Effortlessly craft tailored, professional resumes that showcase your skills and experience, perfectly aligning with job description.
+            </p>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors duration-300">
+            TRY FOR FREE
+          </button>
         </div>
       </div>
     </section>
