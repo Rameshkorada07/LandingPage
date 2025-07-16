@@ -12,6 +12,7 @@ import UpcomingFeatures from '../components/UpcomingFeatures';
 import FAQ from '../components/FAQ';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
+import FeedbackButton from '../components/FeedbackButton';
 import '../styles/main.css';
 
 const Index = () => {
@@ -24,11 +25,14 @@ const Index = () => {
       <Statistics />
       <BeforeAfter />
       <WhyChoose />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <UpcomingFeatures />
       <FAQ />
       <CallToAction />
       <Footer />
+      
+      {/* Floating Feedback Button - appears on all sections */}
+      <FeedbackButton />
     </div>
   );
 };

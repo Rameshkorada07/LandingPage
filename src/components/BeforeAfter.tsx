@@ -20,7 +20,7 @@ const BeforeAfter = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="before-after">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="before-after-title">
@@ -47,7 +47,7 @@ const BeforeAfter = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4 p-4 border border-red-200 rounded-xl">
-                <img src={rejection} alt="Rejection" className="w-8 h-8 flex-shrink-0" />
+                <img src={rejection} alt="Rejection" className="w-8 h-8 flex-shrink-0 item-icon" />
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Rejection</h4>
                   <p className="text-gray-600 text-sm">Non-compliant resumes lead to rejections before interviews.</p>
@@ -73,7 +73,7 @@ const BeforeAfter = () => {
           </div>
           
           {/* Arrow */}
-          <div className="flex-shrink-0 text-4xl text-gray-400 font-bold flex items-center justify-center align-middle">
+          <div className="flex-shrink-0 text-4xl text-gray-400 font-bold flex items-center justify-center align-middle before-after-arrow">
             →
           </div>
           

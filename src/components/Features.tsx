@@ -1,5 +1,7 @@
 
 import React from 'react';
+import feature1 from './Assets/feature-1.jpg';
+import feature2 from './Assets/feature-2.jpg';
 
 const Features = () => {
   return (
@@ -15,7 +17,7 @@ const Features = () => {
           <div className="feature-showcase">
             <div className="feature-visual">
               <img 
-                src="src/components/Assets/feature-1.jpg" 
+                src={feature1} 
                 alt="Resume Builder Feature" 
                 className="feature-image"
               />
@@ -36,7 +38,7 @@ const Features = () => {
             </div>
             <div className="feature-visual">
               <img 
-                src="src/components/Assets/feature-2.jpg" 
+                src={feature2} 
                 alt="Interview Coach Feature" 
                 className="feature-image"
               />

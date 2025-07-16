@@ -33,7 +33,10 @@ const Statistics = () => {
     <section className="statistics">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">All you need to land your dream job</h2>
+          <h2 className="section-title">
+            All you need to land your 
+            dream job
+          </h2>
           <p className="section-description">We provide the best tasks to help you get your dream job.</p>
         </div>
         
