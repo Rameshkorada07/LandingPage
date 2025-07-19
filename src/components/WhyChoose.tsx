@@ -10,7 +10,7 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className='heading-title'>
-            why users choose <span className="text-blue-600">Jobspring</span>
+            why users choose <span style={{color: '#1B29CB'}}>Jobspring</span>
           </h2>
         </div>
         
@@ -51,7 +51,7 @@ const WhyChoose = () => {
 
         {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors duration-300">
+          <button className="hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors duration-300" style={{backgroundColor: '#1B29CB'}}>
             TRY FOR FREE
           </button>
         </div>
