@@ -1,7 +1,7 @@
 
 import React from 'react';
 import freeOfCost from './Assets/freeOfCost.png';
-import atsscore from './Assets/atsscore.png';
+import atsscore from './Assets/atsScore.png';
 import interviewCoach from './Assets/interviewCoach.png';
 import whyChoose_bg from './Assets/whyChoose-bg.png'
 const WhyChoose = () => {
@@ -18,7 +18,7 @@ const WhyChoose = () => {
           {/* Free of cost */}
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <img src={freeOfCost} alt="Free of cost" className='whyChoose-img' />
+              <img src={freeOfCost} alt="Free job search platform icon - JobSpring offers free AI resume builder and career tools" className='whyChoose-img' />
             </div>
             <h3 className="img-heading">Free of cost</h3>
             <p className='img-description'>
@@ -29,7 +29,7 @@ const WhyChoose = () => {
           {/* 90+ ATS Score Resume */}
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <img src={atsscore} alt="90+ ATS Score Resume"  className='whyChoose-img'  />
+              <img src={atsscore} alt="90+ ATS Score Resume optimization icon - JobSpring ATS-friendly resume builder for job applications"  className='whyChoose-img'  />
             </div>
             <h3 className="img-heading">90+ ATS Score Resume</h3>
             <p className='img-description'>
@@ -40,7 +40,7 @@ const WhyChoose = () => {
           {/* Interview Coach */}
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <img src={interviewCoach} alt="Interview Coach" className='whyChoose-img' />
+              <img src={interviewCoach} alt="AI Interview Coach icon - JobSpring interview preparation and coaching platform for job seekers" className='whyChoose-img' />
             </div>
             <h3 className="img-heading">Interview Coach</h3>
             <p className='img-description'>

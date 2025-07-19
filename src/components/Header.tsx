@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container">
         <div className="nav-wrapper">
           <div className="logo">
-            <img src={logo} alt="JobSpring" className="logo-img" />
+            <img src={logo} alt="JobSpring - AI-Powered Job Search Platform and Resume Builder Logo" className="logo-img" />
           </div>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>

@@ -1,14 +1,38 @@
-User-agent: Googlebot
+User-agent: *
 Allow: /
 
+# Sitemaps
+Sitemap: https://jobspring.ai/sitemap.xml
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
 User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Social media bots
+User-agent: facebookexternalhit
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: LinkedInBot
 Allow: /
 
+# Block unnecessary paths (if any)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all search engines to access all content
+# since this is a public landing page
 User-agent: *
 Allow: /

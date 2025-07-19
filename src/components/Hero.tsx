@@ -20,19 +20,19 @@ const Hero = () => {
             </div>
             <div className="hero-features">
               <div className="feature-item">
-                <img className="check-img" src={check_img} alt="" />
+                <img className="check-img" src={check_img} alt="Checkmark icon for AI Resume Builder feature - JobSpring job search platform" />
                 <span className="feature-text">AI Resume Builder</span>
               </div>
               <div className="feature-item">
-                <img className="check-img" src={check_img} alt="" />
+                <img className="check-img" src={check_img} alt="Checkmark icon for AI Interview Coach feature - JobSpring career platform" />
                 <span className="feature-text">AI Interview Coach</span>
               </div>
               <div className="feature-item">
-                <img className="check-img" src={check_img} alt="" />
+                <img className="check-img" src={check_img} alt="Checkmark icon for Automated Job Tracking feature - JobSpring employment tools" />
                 <span className="feature-text">Automated Job Tracking</span>
               </div>
               <div className="feature-item">
-                <img className="check-img" src={check_img} alt="" />
+                <img className="check-img" src={check_img} alt="Checkmark icon for additional JobSpring features - career development tools" />
                 <span className="feature-text">And Much More...</span>
               </div>
             </div>

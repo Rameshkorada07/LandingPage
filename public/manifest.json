@@ -1,0 +1,53 @@
+{
+  "name": "JobSpring - AI-Powered Job Search Platform",
+  "short_name": "JobSpring",
+  "description": "Transform your job search with AI-powered tools. Get tailored resumes, interview coaching, and automated job tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Create Resume",
+      "short_name": "Resume",
+      "description": "Build your AI-powered resume",
+      "url": "/resume-builder",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Interview Coach",
+      "short_name": "Interview",
+      "description": "Practice with AI interview coach",
+      "url": "/interview-coach",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+} 

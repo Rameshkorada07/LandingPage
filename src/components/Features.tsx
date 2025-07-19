@@ -18,7 +18,7 @@ const Features = () => {
             <div className="feature-visual">
               <img 
                 src={feature1} 
-                alt="Resume Builder Feature" 
+                alt="AI Resume Builder interface showing customized resume templates and job description matching - JobSpring job search platform" 
                 className="feature-image"
               />
             </div>
@@ -39,7 +39,7 @@ const Features = () => {
             <div className="feature-visual">
               <img 
                 src={feature2} 
-                alt="Interview Coach Feature" 
+                alt="AI Interview Coach platform showing practice sessions and feedback system - JobSpring career development tools" 
                 className="feature-image"
               />
             </div>
