@@ -12,10 +12,12 @@ const Hero = () => {
             <div className="hero-banner">
               <span className="trust-badge">TRUSTED BY OVER 100K JOB SEEKERS!</span>
             </div>
-            <h1 className="hero-title">
-              Land Your <span className="hero-subtitle">Dream Job</span><br />
-              <span className="hero-tagline">Stress less, Struggle less</span>
-            </h1>
+            <div className="hero-title-wrapper">
+              <h1 className="hero-title">
+                Land Your <span className="hero-subtitle">Dream Job</span>
+              </h1>
+              <h2 className="hero-tagline">Stress less, Struggle less</h2>
+            </div>
             <div className="hero-features">
               <div className="feature-item">
                 <img className="check-img" src={check_img} alt="" />

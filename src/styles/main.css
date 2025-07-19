@@ -352,14 +352,22 @@ p {
   text-transform: uppercase;
 }
 
+.hero-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
 .hero-title {
   font-size: 3.2rem;
   font-weight: 700;
   color: #1f2937;
-  margin-bottom: 32px;
+  margin-bottom: 0;
   line-height: 1.1;
   text-align: center;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .hero-subtitle {
@@ -369,20 +377,31 @@ p {
 
 .hero-tagline {
   color: #1f2937;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 3rem;
   width: 100%;
   text-align: center;
+  max-width: 1100px;
+  margin: 0;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 /* Mobile responsive styles for hero */
 @media (max-width: 768px) {
+  .hero-title-wrapper {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
   .hero-title {
     font-size: 2.2rem;
+    max-width: 500px;
   }
   
   .hero-tagline {
     font-size: 2rem;
+    max-width: 900px;
   }
 }
 
@@ -576,14 +595,22 @@ p {
     background-position: center top;
   }
   
+  .hero-title-wrapper {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  
   .hero-title {
     font-size: 2.5rem;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     line-height: 1.2;
+    max-width: 450px;
   }
   
   .hero-tagline {
     font-size: 2rem;
+    max-width: 95vw !important;
+    white-space: nowrap;
   }
   
   .hero-features {
@@ -627,13 +654,21 @@ p {
    padding: 4px 12px;
    font-size: 20px;
   }
+  .hero-title-wrapper {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  
   .hero-title {
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    max-width: 280px;
   }
   
   .hero-tagline {
     font-size: 1.6rem;
+    max-width: 98vw !important;
+    white-space: nowrap;
   }
   
   .hero-features {
@@ -2290,7 +2325,7 @@ letter-spacing: -0.66px;
 
   .hero-tagline {
     font-size: 1.4rem;
-    max-width: 400px;
+    max-width: 90vw !important;
     margin: 0 auto;
   }
 
@@ -2315,7 +2350,7 @@ letter-spacing: -0.66px;
   .hero-tagline {
     font-size: 1.1rem;
     line-height: 1.2;
-    max-width: 350px;
+    max-width: 85vw !important;
     margin: 0 auto;
   }
 
@@ -3407,17 +3442,18 @@ button:hover,
   .hero-title,
   .heading-title,
   .section-title {
-    font-size: 22px;
+    font-size: 21px;
     padding: 0 12px;
   }
   /*.hero-title {
     margin-top: 20px;
   }*/
   .hero-tagline {
-    font-size: 19px;
-    max-width: 400px;
+    font-size: 20px;
+    max-width: 100vw !important;
     margin: 0 auto;
-
+    white-space: nowrap;
+    padding: 0 5px;
   }
 
   .trust-badge {
