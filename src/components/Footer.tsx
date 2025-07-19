@@ -38,13 +38,13 @@ const Footer = () => {
           {/* Right section - Newsletter */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900">subscribe to our newsletter</h3>
-            <div className="flex flex-col md:flex-row gap-3 items-start md:items-center">
+            <div className="flex flex-col gap-3">
               <input 
                 type="email" 
-                placeholder="Enter your email" 
-                className="min-w-[250px] md:flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm placeholder-gray-500"
+                placeholder="Your email" 
+                className="w-64 sm:w-full sm:max-w-sm px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm placeholder-gray-500"
               />
-              <button className="px-6 py-3 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap" style={{backgroundColor: '#1B29CB'}}>
+              <button className="self-start px-6 py-3 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap" style={{backgroundColor: '#1B29CB'}}>
                 Subscribe
               </button>
             </div>
